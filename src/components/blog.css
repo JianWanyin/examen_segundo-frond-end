@@ -1,0 +1,70 @@
+/* Estilos principales del Blog */
+.blog {
+    padding: 2rem;
+    background-color: #fdfdfd; /* Fondo más limpio */
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 16px; /* Bordes más redondeados */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog:hover {
+    transform: translateY(-5px); /* Animación al pasar el cursor */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog h1 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif; /* Tipografía más moderna */
+    font-weight: 700;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1.5px;
+  }
+  
+  .blog-post {
+    border-bottom: 1px solid #eaeaea; /* Separador suave */
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h2 {
+    font-size: 1.8rem;
+    color: #34495e; /* Azul oscuro */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .blog-post h2:hover {
+    color: #2980b9; /* Azul vivo al pasar el cursor */
+  }
+  
+  .blog-post p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Gris suave */
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5rem;
+  }
+  
+  .blog-post a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #e74c3c; /* Rojo vibrante */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .blog-post a:hover {
+    color: #c0392b; /* Rojo más oscuro */
+    border-bottom: 2px solid #c0392b;
+  }
+  

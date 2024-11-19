@@ -1,0 +1,351 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Copperplate', serif; /* Cambia la fuente aquí */
+  line-height: 1.6;
+  overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+}
+
+.text-white {
+  color: white;
+  margin: 0 15px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Copperplate', serif; /* Cambia la fuente aquí */
+}
+
+/* Clase para el contenedor de los iconos */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar img {
+  height: 70px;
+  width: auto; /* Mantener las proporciones automáticas */
+  max-width: 150px; 
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #f55b14; /* Cambia el color a naranja cuando se pasa el mouse */
+}
+
+
+.navbar a.active {
+  color: #f55b14;
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/fondo.jpg') no-repeat center center / cover;
+  background-size: cover; 
+  color: white;
+  text-align: left;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: bold; /* Agregar negrita al título */
+}
+
+.hero p {
+  font-size: 1.2em;
+  font-weight: bold; /* Agregar negrita al título */
+}
+
+/* Estilos para Servicios */
+.services {
+  padding: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.services-title {
+  background-color: #fff;
+  padding: 0;
+  margin: 10px auto;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  width: 80%;
+}
+
+.services-title h2 {
+  color: #003366;
+  font-size: 2em;
+  margin: 0;
+}
+
+.cleaning-block,
+.jardines-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif;
+}
+
+.jardines {
+  flex: 1; /* Hacer que el texto ocupe el espacio restante */
+  padding: 20px;
+  margin-right: 50px; /* Ajusta este valor para aumentar el espacio a la derecha */
+  color: white; /* Cambiar el color del texto a blanco */
+  font-family: 'Times New Roman', Times, serif; /* Aplicar la fuente Times New Roman */
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+}
+
+
+.cleaning {
+  flex: 1;
+  padding: 20px;
+}
+
+.jardines-block {
+  background-color: #ff6600;
+}
+
+.jardines-block img,
+.cleaning-block img {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.services-img-small {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilos para CTA */
+.cta {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta p {
+  font-size: 1.2em;
+  font-weight: bold; 
+}
+.cta h1 {
+  font-size: 1.2em;
+  font-weight: bold; 
+}
+
+.cta button {
+  background-color: white;
+  color: #3a32b3;
+  font-weight: bold; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario */
+.form-section {
+  background: url('assets/comunidad.jpg') no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.form-section h2 {
+  font-size: 2em;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section input, 
+.form-section textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-section button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: white;
+}
+
+.checkbox-container label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 4px;
+  width: auto;
+  height: auto;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      z-index: 1000;
+  }
+
+  .navbar.active .navbar-links {
+      display: flex;
+  }
+  #dropdownMenu {
+      display: none; /* Ocultar el menú desplegable por defecto */
+  }
+  .navbar-links a {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+  }
+
+  @media (min-width: 769px) {
+      .menu-toggle {
+          display: block;
+      }
+  
+      .navbar-links {
+          display: flex; /* Mostrar enlaces en pantallas grandes */
+      }
+  }
+
+  .cleaning-block,
+  .jardines-block {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .cleaning-block img,
+  .jardines-block img {
+      margin: 20px 0;
+      width: 70%; /* Reducción del tamaño de las imágenes */
+  }
+  .cleaning ,
+  .jardines {
+      text-align: center; /* Centrar el texto en dispositivos móviles */
+  }
+  .hero {
+      background-size: 800px auto; /* Cambia a contain para que se ajuste a la sección */
+      padding: 50px 10px; /* Ajusta el padding si es necesario */
+      text-align: center; /* Centra el texto para móviles */
+  }
+
+  .hero h1 {
+      font-size: 2em;
+  }
+
+  .hero p {
+      font-size: 1em;
+  }
+
+  .services-title h2 {
+      font-size: 1.5em;
+  }
+
+  .cta p {
+      font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+      display: none;
+  }
+
+  .navbar-links {
+      display: flex;
+  }
+
+  .cleaning-block,
+  .jardines-block {
+      flex-direction: row;
+  }
+
+  .services-img {
+      width: 50%;
+      margin: 0;
+  }
+}
